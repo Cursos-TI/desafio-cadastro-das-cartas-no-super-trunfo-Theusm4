@@ -6,7 +6,7 @@
 
 int main() {
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    int cod_cidade=0;
+    char cod_cidade[4]="A01";
     char nome_cidade[20]="cidade";
     int populacao=1000;
     double area=1750.32;
@@ -19,7 +19,7 @@ int main() {
     printf("Cadastramento de cartas:\n");
 
     printf("Digite o código da cidade:\n");
-    scanf("%d", &cod_cidade);
+    scanf("%s", &cod_cidade);
 
     printf("Digite o nome da cidade:\n");
     scanf("%s", &nome_cidade);
@@ -39,8 +39,7 @@ int main() {
     // Exibição dos Dados das Cartas:
     printf("\nCarta cadastrada com sucesso, verifique os dados:\n");
 
-    printf("\n01
-        Código da cidade: %i\n", cod_cidade);
+    printf("\nCódigo da cidade: %s\n", cod_cidade);
     printf("Nome da cidade: %s\n", nome_cidade);
     printf("População total: %i\n", populacao);
     printf("Área total: %.2lf²\n", area);
