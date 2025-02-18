@@ -39,12 +39,13 @@ int main() {
     // Exibição dos Dados das Cartas:
     printf("\nCarta cadastrada com sucesso, verifique os dados:\n");
 
-    printf("Código da cidade: %i\n", cod_cidade);
+    printf("\n01
+        Código da cidade: %i\n", cod_cidade);
     printf("Nome da cidade: %s\n", nome_cidade);
     printf("População total: %i\n", populacao);
     printf("Área total: %.2lf²\n", area);
     printf("PIB total: %.2lf\n", pib);
-    printf("Total de pontos turísticos: %i\n", pts_turisticos);
+    printf("Total de pontos turísticos: %i\n\n", pts_turisticos);
 
     return 0;
 }
