@@ -83,8 +83,8 @@ pib_pct = pib/populacao;
 pib_pct2 = pib2/populacao2;
 
 //Realizando o cálculo do Super Poder das cartas
-superPower = (float) (populacao+area+pib+pts_turisticos+pib_pct+(1/densidade));
-superPower = (float) (populacao2+area2+pib2+pts_turisticos2+pib_pct2+(1/densidade2));
+superPower = (populacao+area+pib+pts_turisticos+pib_pct+(1/densidade));
+superPower2 = (populacao2+area2+pib2+pts_turisticos2+pib_pct2+(1/densidade2));
 
 // Exibição dos Dados das Cartas:
 // Carta 1
@@ -96,7 +96,7 @@ printf("Populacao Total: %lu\n", populacao);
 printf("Area Total: %.2lf km²\n", area);
 printf("PIB Total: %.2lf\n", pib);
 printf("Total de Pontos Turisticos: %i\n", pts_turisticos);
-printf("Densidade Populacional: %.2f\n", densidade);
+printf("Densidade Populacional: %.2f habitantes/km²\n", densidade);
 printf("PIB per Capita: %.2f\n", pib_pct);
 printf("Super Poder: %lu\n", superPower);
 
@@ -109,7 +109,7 @@ printf("Populacao Total: %lu\n", populacao2);
 printf("Area Total: %.2lf km²\n", area2);
 printf("PIB Total: %.2lf\n", pib2);
 printf("Total de Pontos Turisticos: %i\n", pts_turisticos2);
-printf("Densidade Populacional: %.2f\n", densidade2);
+printf("Densidade Populacional: %.2f habitantes/km²\n", densidade2);
 printf("PIB per Capita: %.2f\n", pib_pct2);
 printf("Super Poder: %lu\n", superPower2);
 
